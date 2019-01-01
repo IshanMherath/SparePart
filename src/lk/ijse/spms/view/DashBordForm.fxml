@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="lordPane" prefHeight="706.0" prefWidth="1334.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spms.controller.DashBordFormController">
+    <stylesheets>
+        <URL value="@/lk/ijse/spms/style/dashbordform.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="349.0" layoutY="24.0" prefHeight="48.0" prefWidth="637.0" style="-fx-background-color: #42a5f5; -fx-background-radius: 40;">
+         <children>
+            <Label layoutX="147.0" layoutY="5.0" prefHeight="36.0" prefWidth="54.0" />
+            <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="46.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Home_64px_1.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="38.0" layoutY="2.0" prefHeight="43.0" prefWidth="43.0" style="-fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: white;" text=" " />
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="133.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Settings_64px_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="159.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Settings_64px_2.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="132.0" layoutY="3.0" prefHeight="43.0" prefWidth="54.0" style="-fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: white;" text=" " />
+            <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="247.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Purchase_Order_50px.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="240.0" layoutY="2.0" prefHeight="43.0" prefWidth="43.0" style="-fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: white;" text=" " />
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="351.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Scan%20Stock_100px.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="344.0" layoutY="2.0" prefHeight="43.0" prefWidth="43.0" style="-fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: white;" text=" " />
+            <ImageView fitHeight="28.0" fitWidth="43.0" layoutX="454.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Bus_50px.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="446.0" layoutY="2.0" prefHeight="43.0" prefWidth="43.0" style="-fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: white;" text=" " />
+            <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="560.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Supplier_50px_2.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="552.0" layoutY="2.0" prefHeight="43.0" prefWidth="43.0" style="-fx-border-radius: 70; -fx-background-radius: 70; -fx-border-color: white;" text=" " />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1.0" layoutY="90.0" prefHeight="617.0" prefWidth="237.0" style="-fx-background-color: #42a5f5;">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="75.0" layoutX="22.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Settings_64px_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="50.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Settings_64px_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="32.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Scan%20Stock_100px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="mghtStockBtn" layoutX="17.0" layoutY="319.0" onMouseClicked="#LordStockPanel" prefHeight="43.0" prefWidth="188.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="         Manage Payment">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="27.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Bus_50px.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="14.0" layoutY="193.0" prefHeight="43.0" prefWidth="188.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="        Vehicle Deaitals">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="33.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Supplier_50px_2.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="suplierBtn" layoutX="14.0" layoutY="255.0" onMouseClicked="#supplierLord" prefHeight="43.0" prefWidth="188.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="    Supplier">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="20.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Customer_50px_1.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="custBtn" layoutX="13.0" layoutY="135.0" onAction="#CustomerFormLoard" prefHeight="43.0" prefWidth="188.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="        Manage  Customer">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="31.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Settings_50px.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="14.0" layoutY="441.0" prefHeight="43.0" prefWidth="188.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Setting">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="10.0" layoutY="525.0" prefHeight="17.0" prefWidth="98.0" text="Nilmini Motors" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="543.0" prefHeight="17.0" prefWidth="113.0" text="Ihalawawa" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="561.0" prefHeight="17.0" prefWidth="98.0" text="Kiralogama" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="578.0" prefHeight="17.0" prefWidth="127.0" text="Tel-0717991021" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="10.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="prtBtn" layoutX="14.0" layoutY="76.0" onMouseClicked="#lordparts" prefHeight="43.0" prefWidth="188.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="      Parts">
+               <font>
+                  <Font name="ACaslonPro-SemiboldItalic" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="34.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Purchase_Order_50px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="orderBtn" layoutX="17.0" layoutY="14.0" onMouseClicked="#LordOrder" prefHeight="43.0" prefWidth="188.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text=" Order">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="116.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Logout_Rounded_Up_52px_1.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogOut" layoutX="107.0" layoutY="522.0" onAction="#logOut" prefHeight="43.0" prefWidth="113.0" style="-fx-background-radius: 33; -fx-border-radius: 33; -fx-border-color: white;" text="         LogOut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="29.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Report_Card_64px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="reportsBtn" layoutX="15.0" layoutY="380.0" onAction="#loardReports" prefHeight="43.0" prefWidth="188.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Reports">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlLord" layoutX="240.0" layoutY="90.0" prefHeight="617.0" prefWidth="1101.0" style="-fx-background-color: white;" />
+      <Label alignment="CENTER" layoutX="1017.0" layoutY="34.0" prefHeight="28.0" prefWidth="43.0" text="Time">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1178.0" layoutY="34.0" prefHeight="28.0" prefWidth="36.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="30.0" prefHeight="17.0" prefWidth="201.0" text="Spear Parts" textFill="#42a5f5">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLb" layoutX="1066.0" layoutY="34.0" prefHeight="28.0" prefWidth="89.0" />
+      <Label fx:id="dateLb" layoutX="1216.0" layoutY="34.0" prefHeight="28.0" prefWidth="104.0" />
+   </children>
+</AnchorPane>

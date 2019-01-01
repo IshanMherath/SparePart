@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="1101.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spms.controller.ReportsController">
+    <stylesheets>
+        <URL value="@/lk/ijse/spms/style/reports.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="465.0" layoutY="5.0" prefHeight="35.0" prefWidth="171.0" text="Reports">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="223.0" fitWidth="239.0" layoutX="436.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Customer%20Care%20Page_Spares%20261%20x%20261.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="74.0" layoutY="87.0" prefHeight="18.0" prefWidth="963.0" style="-fx-background-color: #42a5f5; -fx-background-radius: 33;" />
+      <AnchorPane layoutX="88.0" layoutY="534.0" prefHeight="18.0" prefWidth="963.0" style="-fx-background-color: #42a5f5; -fx-background-radius: 33;" />
+      <JFXButton fx:id="partBtn" layoutX="92.0" layoutY="147.0" onAction="#partsreport" prefHeight="44.0" prefWidth="223.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="Parts Report">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="suppBtn" layoutX="92.0" layoutY="297.0" onAction="#supplierReport" prefHeight="44.0" prefWidth="223.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="Supplier Report">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnOrderDtl" layoutX="92.0" layoutY="373.0" onAction="#orderDetailsBtn" prefHeight="44.0" prefWidth="223.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="Order Details Report">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="757.0" layoutY="140.0" onAction="#onLorsCustomer" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="Customer Report">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="757.0" layoutY="225.0" onAction="#damagePartLoer" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="DamageParts Report">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="757.0" layoutY="302.0" onAction="#lordSupplierReport" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="Supplier Order Report">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnOrder" layoutX="92.0" layoutY="224.0" onAction="#orderReport" prefHeight="44.0" prefWidth="223.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="Order Report">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="stokBtn" layoutX="91.0" layoutY="449.0" onAction="#stockReport" prefHeight="44.0" prefWidth="223.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="Stock Report">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="763.0" layoutY="383.0" onAction="#lordSupplierOrderPayment" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text="Supplier Order Payment Report">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="764.0" layoutY="465.0" onAction="#lordOrderPayment" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffa726; -fx-background-radius: 33;" text=" Order Payment Report">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

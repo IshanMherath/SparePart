@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="logingPanel" prefHeight="548.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spms.controller.LoginFormController">
+   <children>
+      <JFXTextField fx:id="txtUserName" focusColor="#003fff" labelFloat="true" layoutX="46.0" layoutY="201.0" prefHeight="31.0" prefWidth="253.0" promptText="User Name" unFocusColor="#003fff">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" focusColor="#003fff" labelFloat="true" layoutX="46.0" layoutY="259.0" prefHeight="31.0" prefWidth="253.0" promptText="Password" unFocusColor="#003fff">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="loginBtn" layoutX="46.0" layoutY="339.0" onMouseClicked="#lordDashBord" prefHeight="25.0" prefWidth="253.0" style="-fx-background-radius: 22; -fx-background-color: #f2ff00;" text="Log In">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="17.0" layoutY="481.0" prefHeight="18.0" prefWidth="83.0" text="Nilmini Motors" textFill="#2200ff">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="499.0" prefHeight="17.0" prefWidth="67.0" text="Kiralogama" textFill="#2200ff">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="516.0" prefHeight="18.0" prefWidth="76.0" text="Tel-0717991021" textFill="#2200ff">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="139.0" layoutX="121.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/SSecurity1.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAfd" layoutX="120.0" layoutY="411.0" onMouseClicked="#addUser" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: blue;" text="Add User" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

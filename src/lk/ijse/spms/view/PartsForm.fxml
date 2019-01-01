@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="1101.0" style="-fx-background-color: White;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spms.controller.PartsFormController">
+    <stylesheets>
+        <URL value="@/lk/ijse/spms/style/partsform.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="462.0" prefHeight="17.0" prefWidth="178.0" text="Parts">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="23.0" layoutY="36.0" prefHeight="17.0" prefWidth="1058.0" style="-fx-background-color: #42a5f5; -fx-background-radius: 40;" />
+      <TableView fx:id="tablePartDeatails" layoutX="94.0" layoutY="407.0" prefHeight="150.0" prefWidth="967.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Part Id" />
+          <TableColumn prefWidth="158.0" text="PartName" />
+            <TableColumn prefWidth="85.0" text="Vehicle Type" />
+            <TableColumn prefWidth="117.0" text="Model" />
+            <TableColumn prefWidth="138.0" text="Catocory" />
+            <TableColumn prefWidth="113.0" text="Catocory" />
+            <TableColumn prefWidth="79.0" text="Type" />
+            <TableColumn prefWidth="68.0" text="Qty" />
+            <TableColumn prefWidth="133.0" text="UnitPrise" />
+        </columns>
+      </TableView>
+      <Pane layoutX="23.0" layoutY="576.0" prefHeight="17.0" prefWidth="1058.0" style="-fx-background-color: #42a5f5; -fx-background-radius: 40;" />
+      <VBox layoutX="75.0" layoutY="79.0" prefHeight="326.0" prefWidth="365.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="251.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="75.0" text="Part Id" />
+                  <TextField fx:id="textId" editable="false" prefHeight="25.0" prefWidth="118.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="75.0" text="Part Name" />
+                  <TextField fx:id="txtName" prefHeight="25.0" prefWidth="198.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="75.0" text="Description" />
+                  <TextField fx:id="textDescrip" prefHeight="25.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="77.0" text="Vehicle Type" />
+                  <HBox prefHeight="42.0" prefWidth="265.0">
+                     <children>
+                        <TextField fx:id="txtVehicleType" prefHeight="25.0" prefWidth="197.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="75.0" text="Model" />
+                  <TextField fx:id="comboModel" prefHeight="25.0" prefWidth="198.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="75.0" text="Catocory" />
+                  <TextField fx:id="comboCatocory" prefHeight="25.0" prefWidth="199.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="265.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="75.0" text="Type" />
+                  <TextField fx:id="txtType" prefHeight="25.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="435.0" layoutY="91.0" prefHeight="210.0" prefWidth="351.0">
+         <children>
+            <HBox prefHeight="52.0" prefWidth="460.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="77.0" text="Qty" />
+                  <TextField fx:id="txtQty" prefHeight="25.0" prefWidth="226.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="390.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="77.0" text="UnitPrise" />
+                  <TextField fx:id="txtUntPrs" prefHeight="25.0" prefWidth="223.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="72.0" prefWidth="460.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="77.0" text="QtyOnHand" />
+                  <TextField prefHeight="25.0" prefWidth="222.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="206.0" fitWidth="230.0" layoutX="809.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/5ae25ffc8a90eaefc0a9fec5c1170fca.gif" />
+         </image>
+      </ImageView>
+      <HBox layoutX="412.0" layoutY="307.0" prefHeight="60.0" prefWidth="532.0">
+         <children>
+            <JFXButton fx:id="addBtn" onAction="#AddPartDeatails" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: green; -fx-background-radius: 22; -fx-border-radius: 22;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></JFXButton>
+            <Label prefHeight="37.0" prefWidth="55.0" />
+            <JFXButton fx:id="BtnDelette" onAction="#OnDelete" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: red; -fx-border-radius: 22; -fx-background-radius: 22;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></JFXButton>
+            <Label prefHeight="37.0" prefWidth="55.0" />
+            <JFXButton fx:id="BtnSearch" onAction="#searchParts" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: yellow; -fx-background-radius: 22; -fx-border-radius: 22;" text="Search" />
+            <Label prefHeight="37.0" prefWidth="55.0" />
+            <JFXButton fx:id="BtnUpdate" onAction="#OnUpdatePart" prefHeight="35.0" prefWidth="109.0" style="-fx-background-color: orange; -fx-background-radius: 22; -fx-border-radius: 22;" text="Update" />
+         </children>
+      </HBox>
+      <JFXComboBox fx:id="idCombo" labelFloat="true" layoutX="420.0" layoutY="367.0" prefHeight="25.0" prefWidth="131.0" />
+   </children>
+</AnchorPane>

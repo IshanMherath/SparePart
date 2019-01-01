@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="1101.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spms.controller.MakePaymentFormController">
+    <stylesheets>
+        <URL value="@/lk/ijse/spms/style/makepaymentform.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="483.0" layoutY="8.0" prefHeight="25.0" prefWidth="166.0" text="Manage Payment Form">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="629.0" layoutY="100.0" prefHeight="25.0" prefWidth="114.0" text="SupplierPayment Id">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSupplierPaymentId" editable="false" layoutX="747.0" layoutY="100.0" prefHeight="25.0" prefWidth="139.0" style="-fx-border-radius: blue;" />
+      <JFXTextField fx:id="txtFullPaymentt" focusColor="#0040ff" labelFloat="true" layoutX="629.0" layoutY="311.0" prefHeight="25.0" prefWidth="158.0" promptText="Full Payment" unFocusColor="#0040ff">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtSupPayDate" editable="false" focusColor="#0040ff" labelFloat="true" layoutX="629.0" layoutY="209.0" prefHeight="25.0" prefWidth="158.0" promptText="Date" unFocusColor="#0040ff">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="suplierPaymentTable" layoutX="586.0" layoutY="373.0" prefHeight="167.0" prefWidth="403.0">
+        <columns>
+          <TableColumn prefWidth="81.0" text="Payment Id" />
+          <TableColumn prefWidth="76.0" text="Suplier Id" />
+            <TableColumn prefWidth="70.0" text="Date " />
+            <TableColumn prefWidth="86.0" text="Advance" />
+            <TableColumn prefWidth="89.0" text="Full Payment" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSupAdvance" focusColor="#0040ff" labelFloat="true" layoutX="629.0" layoutY="258.0" prefHeight="25.0" prefWidth="158.0" promptText="Advance" unFocusColor="#0040ff">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <AnchorPane layoutX="573.0" layoutY="63.0" prefHeight="18.0" prefWidth="468.0" style="-fx-background-radius: 22; -fx-background-color: #42a5f5;">
+         <children>
+            <Label layoutX="206.0" layoutY="1.0" prefHeight="17.0" prefWidth="139.0" text="Supplier Payment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="573.0" layoutY="560.0" prefHeight="18.0" prefWidth="468.0" style="-fx-background-radius: 22; -fx-background-color: #42a5f5;" />
+      <Label layoutX="120.0" layoutY="105.0" prefHeight="25.0" prefWidth="114.0" text="OrderPayment Id">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPaymentId" editable="false" layoutX="238.0" layoutY="105.0" prefHeight="25.0" prefWidth="139.0" style="-fx-border-radius: blue;" />
+      <JFXTextField fx:id="txtFullPayment" focusColor="#0040ff" labelFloat="true" layoutX="120.0" layoutY="316.0" prefHeight="25.0" prefWidth="158.0" promptText="Full Payment" unFocusColor="#0040ff">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="textDate" editable="false" focusColor="#0040ff" labelFloat="true" layoutX="120.0" layoutY="214.0" prefHeight="25.0" prefWidth="158.0" promptText="Date" unFocusColor="#0040ff">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="OrderPaymentTable" layoutX="77.0" layoutY="378.0" prefHeight="167.0" prefWidth="403.0">
+         <columns>
+            <TableColumn prefWidth="81.0" text="Payment Id" />
+            <TableColumn prefWidth="76.0" text="Order Id" />
+            <TableColumn prefWidth="70.0" text="Date " />
+            <TableColumn prefWidth="86.0" text="Advance" />
+            <TableColumn prefWidth="89.0" text="Full Payment" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="textAdvance" focusColor="#0040ff" labelFloat="true" layoutX="120.0" layoutY="263.0" prefHeight="25.0" prefWidth="158.0" promptText="Advance" unFocusColor="#0040ff">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <AnchorPane layoutX="64.0" layoutY="63.0" prefHeight="18.0" prefWidth="468.0" style="-fx-background-radius: 22; -fx-background-color: #42a5f5;">
+         <children>
+            <Label layoutX="206.0" layoutY="1.0" prefHeight="17.0" prefWidth="139.0" text="Customer Payment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="64.0" layoutY="560.0" prefHeight="18.0" prefWidth="468.0" style="-fx-background-radius: 22; -fx-background-color: #42a5f5;" />
+      <JFXButton fx:id="addBtn" layoutX="308.0" layoutY="331.0" onMouseClicked="#addPayment" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: green; -fx-background-radius: 33;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="deleteBtn" layoutX="404.0" layoutY="331.0" onAction="#onDeletePayment" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: red; -fx-background-radius: 33;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="addBtnn" layoutX="839.0" layoutY="328.0" onAction="#addSupplierPayment" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: green; -fx-background-radius: 33;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="deelteBtnn" layoutX="935.0" layoutY="328.0" onAction="#deleteSupplierPayment" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: red; -fx-background-radius: 33;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="547.0" layoutY="119.0" orientation="VERTICAL" prefHeight="418.0" prefWidth="0.0" style="-fx-background-color: black;" />
+      <JFXComboBox fx:id="comboOrderId" focusColor="#0040ff" labelFloat="true" layoutX="120.0" layoutY="162.0" prefHeight="25.0" prefWidth="128.0" promptText="OrderId" unFocusColor="#2b00ff" />
+      <JFXComboBox fx:id="CombosuplierId" focusColor="#0040ff" labelFloat="true" layoutX="629.0" layoutY="162.0" prefHeight="25.0" prefWidth="139.0" promptText="suplierOrder Id" unFocusColor="#0400ff" />
+   </children>
+</AnchorPane>

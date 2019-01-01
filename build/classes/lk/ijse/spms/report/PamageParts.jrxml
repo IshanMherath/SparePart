@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-28T21:43:33 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PamageParts" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ac0c60fb-bb9f-47e7-a6a0-b911eadd5292">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Akila"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from damageparts]]>
+	</queryString>
+	<field name="DPID" class="java.lang.String"/>
+	<field name="DAMAGEPART_NAME" class="java.lang.String"/>
+	<field name="DESCRIPTION" class="java.lang.String"/>
+	<field name="UNITPRISE" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="10" width="100" height="30" forecolor="#002FFF" uuid="61243d2d-063a-409a-a816-072365570c83"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Damage Parts]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="30" forecolor="#FF0400" uuid="b75fcb02-3c3e-4425-a266-f9e961f8e6b8"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DPID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" forecolor="#FF0400" uuid="b5a0dda4-52e8-4c7e-9985-edd3c4b94315"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAMAGEPART_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" forecolor="#FF0400" uuid="f80f07d9-86ac-46c3-8570-00b63c2d25aa"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCRIPTION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" forecolor="#FF0400" uuid="0365e31f-2e51-48a8-82ce-8301aa403abd"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNITPRISE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="7" width="141" height="30" uuid="8ea0fe39-5465-486e-b50f-a5ab63868ba2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DPID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="7" width="138" height="30" uuid="02af16fd-d642-4783-8299-6e3213340b21"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DAMAGEPART_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="7" width="138" height="30" uuid="fffdf2d9-40d3-4571-a25f-15b2e26d56c8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DESCRIPTION}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="7" width="138" height="30" uuid="47e8ec61-45bb-41b5-9cab-8de08993ef25"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{UNITPRISE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

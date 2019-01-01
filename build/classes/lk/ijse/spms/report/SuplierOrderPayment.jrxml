@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-28T22:00:10 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SuplierOrderPayment" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="792e07f3-bb6f-41a0-ac29-a6f76602e745">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Akila"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from suplierorderpayment]]>
+	</queryString>
+	<field name="PID" class="java.lang.String"/>
+	<field name="SOID" class="java.lang.String"/>
+	<field name="DATE" class="java.lang.String"/>
+	<field name="ADVANCE" class="java.math.BigDecimal"/>
+	<field name="FULLPAYMENT" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="10" width="170" height="30" forecolor="#0019FF" uuid="8722c649-0dce-4713-8e3d-7e998685bfa5"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suplier Order Payment]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" forecolor="#FF0400" uuid="f8d1f584-304f-4241-843c-c14fe1ca3fc2"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" forecolor="#FF0400" uuid="d6f1286f-215a-46d6-bd0b-b319849d3759"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" forecolor="#FF0400" uuid="c241cbb2-ac62-48db-b5ce-d62ff5fd32dd"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" forecolor="#FF0400" uuid="37e25f05-2920-4036-aa62-cc5cd412edee"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADVANCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" forecolor="#FF0400" uuid="9f6e4362-a5df-410c-8ce6-4a190b7e7f4c"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FULLPAYMENT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="8" width="111" height="30" uuid="7d17288a-583b-42d6-a6d3-b1d456b3bc5c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{PID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="8" width="111" height="30" uuid="f7f9d12c-7236-4692-bc81-0837c2c75a4e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{SOID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="8" width="111" height="30" uuid="0499a24e-03c4-44ad-a298-78e3e3d16fae"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="8" width="111" height="30" uuid="c375427c-4e8a-498e-afa1-4d2c547de7b1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ADVANCE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="8" width="111" height="30" uuid="ffdcaa5d-5599-484b-aafe-801e4e45f6a9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{FULLPAYMENT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

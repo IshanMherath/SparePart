@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-28T21:33:03 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="OrderDetail" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="79d366e7-c3ae-49fb-b196-7ef1a733fd8d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Akila"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from orderdetail]]>
+	</queryString>
+	<field name="OrderDeatilID" class="java.lang.String"/>
+	<field name="OrderID" class="java.lang.String"/>
+	<field name="PID" class="java.lang.String"/>
+	<field name="OrderQTY" class="java.lang.Integer"/>
+	<field name="UnitPrise" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="250" y="7" width="100" height="30" forecolor="#0022FF" uuid="26304cbc-1b5c-4982-8fb4-5a1330008ea8"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order Detail]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" forecolor="#FF0400" uuid="06594c5a-1922-4b2f-a732-512a440b981c"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OrderDeatilID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" forecolor="#FF0400" uuid="68e7254f-6461-4452-a594-c50ae132ea1f"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OrderID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" forecolor="#FF0400" uuid="3ebb15c1-94ff-48b3-9696-7389b62e0790"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" forecolor="#FF0400" uuid="f4aebb35-c0ff-4e42-93ca-1aa064b1fecb"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OrderQTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" forecolor="#FF0400" uuid="f7d25667-6241-40db-be95-fc5895fe4add"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UnitPrise]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="9" width="111" height="30" uuid="6e912645-3d43-403d-bfe1-c2e8aaac1874"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{OrderDeatilID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="9" width="111" height="30" uuid="50e8e420-15c4-4532-8a9e-c0ebef12dee0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{OrderID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="9" width="111" height="30" uuid="453bee49-e8cf-4630-b5cb-451d7ae7ab09"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{PID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="9" width="111" height="30" uuid="d441bdbb-d8ec-4e5b-b74e-b09b2a913853"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{OrderQTY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="9" width="111" height="30" uuid="00beae0d-54fd-4f37-b83e-2f7f65feba9a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{UnitPrise}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

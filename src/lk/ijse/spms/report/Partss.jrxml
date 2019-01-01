@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-07-28T21:22:05 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Partss" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f04d5432-01de-4f67-8e97-a40a61adebc9">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Akila"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from parts]]>
+	</queryString>
+	<field name="PID" class="java.lang.String"/>
+	<field name="PART_NAME" class="java.lang.String"/>
+	<field name="Description" class="java.lang.String"/>
+	<field name="VEHICLE_TYPE" class="java.lang.String"/>
+	<field name="MODEL" class="java.lang.String"/>
+	<field name="CATOCORY" class="java.lang.String"/>
+	<field name="TYPE" class="java.lang.String"/>
+	<field name="QTY" class="java.lang.Integer"/>
+	<field name="UnitPrice" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="227" y="10" width="100" height="30" forecolor="#0037FF" uuid="98ec5792-4778-419e-bac2-405e81e088cc"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Parts Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="50" height="30" uuid="b08c75b0-fcdd-4e83-aac1-a0aac504f25c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="0" width="60" height="30" uuid="c46f0451-34de-4f3e-a299-c407046c8397"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PART_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="69" height="30" uuid="19988547-f59f-4f38-8dff-4e855ca7e149"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="0" width="61" height="30" uuid="a619cefd-8562-401f-90fc-88b154178226"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VEHICLE_TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="0" width="51" height="30" uuid="3b401550-e9e1-42f9-bcf0-23d75f22a881"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MODEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="52" height="30" uuid="06acad3b-d208-46a0-bf50-87c1ec35add6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CATOCORY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="0" width="43" height="30" uuid="7b6e64e1-37a7-40ef-af04-571cbd875f0b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="0" width="44" height="30" uuid="a2198c0c-49e6-4768-ae56-255d747ff612"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="0" width="61" height="30" uuid="07ffcb03-23d0-4c95-a27f-4334ce3e639b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UnitPrice]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="8" width="67" height="30" uuid="11a755fe-71eb-493f-9744-287c012e0d4f"/>
+				<textFieldExpression><![CDATA[$F{PID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="8" width="61" height="30" uuid="f362f2a2-6e24-425e-aa41-8b3df5d12861"/>
+				<textFieldExpression><![CDATA[$F{PART_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="8" width="61" height="30" uuid="203e6d8c-ea77-4f6e-b14e-3ac60cee036d"/>
+				<textFieldExpression><![CDATA[$F{Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="8" width="61" height="30" uuid="db591f07-c971-42e2-a73c-d4c329019dd1"/>
+				<textFieldExpression><![CDATA[$F{VEHICLE_TYPE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="8" width="61" height="30" uuid="a1c01602-dcab-4ef7-b183-a3dbb05fac38"/>
+				<textFieldExpression><![CDATA[$F{MODEL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="8" width="61" height="30" uuid="9452dd0a-8c8a-4763-91ba-559a118ff702"/>
+				<textFieldExpression><![CDATA[$F{CATOCORY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="8" width="61" height="30" uuid="7f7232db-2b4d-41ef-a7b1-f85f131b7c5d"/>
+				<textFieldExpression><![CDATA[$F{TYPE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="8" width="61" height="30" uuid="026cb80d-f54d-434b-b8ad-869ec1b85170"/>
+				<textFieldExpression><![CDATA[$F{QTY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="8" width="61" height="30" uuid="bcf1eebd-31b9-4b57-9785-7489e7dab93a"/>
+				<textFieldExpression><![CDATA[$F{UnitPrice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
